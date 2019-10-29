@@ -1,6 +1,6 @@
 CREATE TABLE hierarchy (
     id SERIAL PRIMARY KEY,
-    uuid UUID UNIQUE DEFAULT uuid_generate_v4()
+    uuid UUID UNIQUE DEFAULT uuid_generate_v4(),
     name TEXT NOT NULL,
     description TEXT,
     created_date TIMESTAMP WITH TIME ZONE DEFAULT current_timestamp,
