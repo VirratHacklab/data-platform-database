@@ -35,7 +35,7 @@ CREATE TYPE ruuvi AS (
 );
 
 CREATE TABLE ruuvi_telemetry (
-    device_id INTEGER REFERENCES device (id)
+    device_id INTEGER REFERENCES device (id),
     time TIMESTAMP WITH TIME ZONE NOT NULL,
     parameters ruuvi
 );
