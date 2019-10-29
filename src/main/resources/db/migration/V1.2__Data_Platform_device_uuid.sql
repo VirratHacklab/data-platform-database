@@ -1,0 +1,1 @@
+ALTER TABLE device ADD uuid UUID UNIQUE DEFAULT uuid_generate_v4();
